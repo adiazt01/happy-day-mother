@@ -1,0 +1,81 @@
+*{
+   font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+    background-blend-mode: multiply;
+}
+
+.text-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 40px;
+    width: 600px;
+    animation: contianertext 1.5s none;
+}
+
+.text-container > p{
+    text-align: left;
+    font-size: 18px;
+    width: 100%;
+}
+
+.text-container > h1{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 800;
+}
+
+/* carousel */
+.d-block{
+    position: relative;
+    height: 450px;
+    border-radius: 20px;
+}
+
+.carousel{
+    position: relative;
+    width: 350px;
+    border-radius: 20px;
+}
+
+/* hearth */
+.hearth{
+    position: relative;
+    margin-top: 20px;
+    width: 160px;
+    animation: latido .5s cubic-bezier(0.215, 0.610, 0.355, 1) infinite;
+}
+
+@keyframes contianertext{
+    0% {
+        opacity: 0;
+        transform: translateX(-300px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes latido {
+    0%{
+        transform: scale(1);
+    }
+    80%{
+        transform: scale(1.1);
+    }
+}
